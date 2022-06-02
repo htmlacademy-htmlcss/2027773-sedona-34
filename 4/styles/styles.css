@@ -14,22 +14,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -43,6 +27,10 @@ body {
   color: #000000;
   background-color: #ffffff;
 
+}
+
+.nav-list {
+  list-style-type: none;
 }
 
 .nav-link {
@@ -75,6 +63,10 @@ body {
 .title {
   color: #000000;
   background-color: #ffffff;
+}
+
+.advantages-list {
+  list-style-type: none;
 }
 
 .advantages-title {
@@ -124,11 +116,13 @@ body {
   background-image: url("../images/background-filter.jpg");
   background-size: cover;
 }
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
 }
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -136,16 +130,31 @@ body {
   color: #ffffff;
   text-decoration-line: none;
 }
+
 .filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
 }
+
+.infrastructure {
+  list-style-type: none;
+}
+
+.type-housing {
+  list-style-type: none;
+}
+
+.hotel-list {
+  list-style-type: none;
+}
+
 .control-input {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
+
 .button-throw-off {
   font-size: 16px;
   line-height: 20px;
@@ -164,7 +173,7 @@ body {
   text-transform: uppercase;
 }
 
-.select-control{
+.select-control {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -202,6 +211,19 @@ body {
   color: #000000;
   text-align: center;
 }
+
 .hotel-card-title-link {
+  text-decoration-line: none;
+}
+
+.pagination {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+
+}
+
+.pagination-link {
   text-decoration-line: none;
 }
