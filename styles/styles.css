@@ -49,7 +49,7 @@ body {
   text-decoration-line: none;
   color: #ffffff;
   font-family: inherit;
-
+  text-align: center;
 }
 
 .image-welcome {
@@ -257,8 +257,9 @@ body {
   list-style-type: none;
 }
 
-.footer-social-list {
+.footer-social-list .vissually-hidden {
   list-style-type: none;
+  color: #000000;
 }
 
 .breadcrumbs {
@@ -317,12 +318,10 @@ body {
   border-radius: [object Object]px;
 }
 
-.vk-link {
-  background-image: url(../images/vk.svg);
-  position: absolute;
-  height: 14px;
-  width: 24px;
-}
 .select-control {
   font-family: inherit;
+}
+
+.footer-social-item {
+  color: #000000;
 }
