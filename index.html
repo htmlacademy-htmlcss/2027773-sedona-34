@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -34,19 +35,21 @@
             <span class="visually-hidden">Избраное</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="button nav-link">Хочу сюда!</a>
+        <li class="navigation-item">
+          <a href="#" class="button navigation-link">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main-index">
-    <h1 class="visualy-hidden">Добро пожаловать в каньон Седона</h1>
-    <img class="logo-main" src="images/welcome.svg" alt="Добро пожаловать в каньон Седона" width="460" height="360">
+    <section class="image-welcome">
+      <h1 class="visualy-hidden">Добро пожаловать в каньон Седона</h1>
+      <img class="logo-main" src="images/welcome.svg" alt="Добро пожаловать в каньон Седона" width="460" height="360">
+    </section>
     <section class="title">
-      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</span>
+      <h2 class="interested">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <span class="interested-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</span>
     </section>
     <section class="advantages">
       <ul class="advantages-list">
@@ -59,21 +62,21 @@
             </p>
           </div>
           <img src="images/photo-city.jpg" alt="городок Седона" width="800" height="384">
-          <ul>
+          <ul class="town-list">
             <li class="advantages-town">
-              <h3>Жильё</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <h3 class="advantages-title">Жильё</h3>
+              <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="advantages-town">
-              <h3>Еда</h3>
-              <p>
+              <h3 class="advantages-title">Еда</h3>
+              <p class="advantages-description">
                 Всегда заказывайте топовый фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
             <li class="advantages-town">
-              <h3>Сувениры</h3>
-              <p>
+              <h3 class="advantages-title">Сувениры</h3>
+              <p class="advantages-description">
                 Не только китайского, но и настоящего местного производства!
               </p>
             </li>
@@ -119,18 +122,18 @@
       </ul>
     </section>
     <section class="hotel-offer">
-      <h2 class="Interested">Заинтересовались?</h2>
-      <p>
+      <h2 class="interested">Заинтересовались?</h2>
+      <p class="interested-text">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие
         предложения гостиниц в Седоне
       </p>
-      <a href="#" class="button search-hotel"> Поиск гостиницы в Седоне. </a>
+      <p class="search-hotel"><a href="catalog.html" class="button "> Поиск гостиницы в Седоне. </a></p>
     </section>
 
-    <section class="">
+    <section class="subscription-index">
 
-      <h2>Подпишитесь на рассылку</h2>
-      <p>
+      <h2 class="interested">Подпишитесь на рассылку</h2>
+      <p class="interested-text">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -148,17 +151,17 @@
       <h2 class="visually-hidden">Подписка на нас</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="buttom" href=" https://vk.com/htmlacademy">
+          <a class="button vk-link" href=" https://vk.com/htmlacademy">
             <span class="vissually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="buttom" href="https://t.me/htmlacademy ">
+          <a class="button tlg-link" href="https://t.me/htmlacademy ">
             <span class="vissually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="buttom" href=" https://www.youtube.com/user/htmlacademyru">
+          <a class="button youtube-link" href=" https://www.youtube.com/user/htmlacademyru">
             <span class="vissually-hidden">Ютуб</span>
           </a>
         </li>
