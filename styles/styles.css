@@ -14,13 +14,23 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 
 body {
+  margin: 0;
+
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
 }
 
 .page-header {
@@ -29,14 +39,13 @@ body {
 
 }
 
-.nav-list {
-  list-style-type: none;
-}
+
 
 .nav-link {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  text-decoration: none;
 
 }
 
@@ -57,19 +66,72 @@ body {
   color: #000000;
   background-image: url("../images/index-background.jpg");
   background-size: cover;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  display: block;
+  margin-left: 70px;
+
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.navigation-item {
+  background-color: #756157;
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+}
+
+.nav-list {
+  display: flex;
+  width: 390px;
+  list-style-type: none;
+}
+
+.nav-user {
+  display: flex;
+  list-style-type: none;
+  width: 294px;
+
 }
 
 .main-index {
   text-align: center;
 }
 
-.title {
+
+
+
+.advantages {
   color: #000000;
   background-color: #ffffff;
 }
 
 .advantages-list {
   list-style-type: none;
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.advantages-item {
+
+  width: 400px;
 }
 
 .advantages-title {
@@ -77,6 +139,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+
 }
 
 .advantages-description {
@@ -235,17 +298,6 @@ body {
   font-family: inherit;
 }
 
-.navigation-item {
-  background-color: #756157;
-  width: 160px;
-  height: 37px;
-  border-radius: 4px;
-}
-
-.nav-user {
-  list-style-type: none;
-}
-
 .search-hotel {
   background-color: #756157;
   width: 574px;
@@ -253,8 +305,14 @@ body {
   border-radius: 4px;
 }
 
+
 .town-list {
+  display: flex;
   list-style-type: none;
+}
+
+.advantages-town {
+  width: 400px;
 }
 
 .footer-social-list .vissually-hidden {
@@ -320,6 +378,19 @@ body {
 
 .select-control {
   font-family: inherit;
+}
+
+.page-footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer-social {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
 }
 
 .footer-social-item {
