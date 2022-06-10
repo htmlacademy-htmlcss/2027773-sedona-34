@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 1280px;
+  width: 1200px;
 }
 
 .main-container {
@@ -77,13 +77,6 @@ body {
   margin: 0 auto;
 }
 
-.page-container {
-  display: flex;
-  flex-direction: column;
-
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .navigation-logo {
   display: block;
@@ -94,7 +87,7 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
-  width: 1200px;
+
 }
 
 .navigation-item {
@@ -132,7 +125,7 @@ body {
 .advantages-list {
   list-style-type: none;
 
-  width: 1200px;
+
 
 }
 
@@ -196,7 +189,7 @@ body {
 .inner-header-title {
   display: flex;
   margin: 0 auto;
-  width: 1200px;
+
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -224,12 +217,20 @@ body {
   list-style-type: none;
 }
 
+.hotel-card {
+
+  padding: 20px;
+  width: 300px;
+}
+
 .hotel-list {
   display: flex;
   margin: 0 auto;
-  padding: 0;
-  width: 1200px;
+  padding-left: 73px;
+  padding-right: 71px;
   list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .control-input {
@@ -248,7 +249,7 @@ body {
 .catalog-hotel {
   display: flex;
   margin: 0 auto;
-  width: 1200px;
+  padding: 0;
   flex-direction: column;
   background-color: #ffffff;
 }
@@ -294,11 +295,7 @@ body {
 }
 
 .subscription-catalog {
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-  width: 1200px;
-  flex-direction: column;
+
   background-color: #ffffff;
   color: #000000;
   text-align: center;
@@ -385,26 +382,19 @@ body {
 }
 
 .pagination-link {
-  background: #82B3D3;
   border-radius: 4px;
   width: 60px;
   height: 60px;
   border: 1px solid #82B3D3;
-}
-
-.number-one {
   background: #F2F2F2;
   color: #000000;
 }
 
 .newsletter-button {
   background: #82B3D3;
-  border-radius: 0px 10px 10px 0px;
   height: 60px;
   width: 200px;
-  left: 0px;
-  top: 0px;
-  border-radius: [object Object]px;
+
 }
 
 .select-control {
@@ -413,7 +403,7 @@ body {
 
 .page-footer {
   display: flex;
-  width: 1200px;
+
   margin: 0 auto;
 
 }
@@ -422,6 +412,8 @@ body {
   display: flex;
   margin: 0 auto;
   width: 1060px;
+  justify-content: space-between;
+
 }
 
 .footer-social-item {
