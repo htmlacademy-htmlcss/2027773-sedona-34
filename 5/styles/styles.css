@@ -21,6 +21,7 @@ html {
 body {
   margin: 0;
 
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -29,8 +30,14 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 1280px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .page-header {
@@ -124,9 +131,9 @@ body {
 
 .advantages-list {
   list-style-type: none;
-  display: flex;
+
   width: 1200px;
-  justify-content: space-between;
+
 }
 
 .advantages-item {
@@ -177,6 +184,9 @@ body {
 }
 
 .inner-header {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
   background-color: #273511;
   color: #ffffff;
   background-image: url("../images/background-filter.jpg");
@@ -184,6 +194,9 @@ body {
 }
 
 .inner-header-title {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -212,6 +225,10 @@ body {
 }
 
 .hotel-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
   list-style-type: none;
 }
 
@@ -229,6 +246,10 @@ body {
 }
 
 .catalog-hotel {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  flex-direction: column;
   background-color: #ffffff;
 }
 
@@ -273,6 +294,11 @@ body {
 }
 
 .subscription-catalog {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  flex-direction: column;
   background-color: #ffffff;
   color: #000000;
   text-align: center;
@@ -283,6 +309,9 @@ body {
 }
 
 .pagination {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
   list-style-type: none;
   font-size: 20px;
   line-height: 36px;
@@ -307,11 +336,13 @@ body {
 
 
 .town-list {
-  display: flex;
+
   list-style-type: none;
+
 }
 
 .advantages-town {
+
   width: 400px;
 }
 
