@@ -55,7 +55,7 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
-          <h2 class="visualy-hidden">Фильтр для выбора гостиницы</h2>
+          <h2 class="visually-hidden">Фильтр для выбора гостиницы</h2>
           <form class="infrastructure-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="infrastructure-filter-group">
               <legend class="filter-title">Инфраструктура:</legend>
@@ -109,21 +109,23 @@
         </section>
       </header>
       <section class="catalog-hotel">
-        <h2 class="hotels-found">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="popular">Сначала популярные</option>
-          <option value="expensiv">Сначала дорогие</option>
-        </select>
-        <a href="#" class="button-border">
-          <span class="visually-hidden">Значки</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Плитка</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Список</span>
-        </a>
+        <div class="sorting">
+          <h2 class="hotels-found">Найдено гостиниц: 38</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="popular">Сначала популярные</option>
+            <option value="expensiv">Сначала дорогие</option>
+          </select>
+          <a href="#" class="button-border button">
+            <span class="visually-hidden">Значки</span>
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Плитка</span>
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Список</span>
+          </a>
+        </div>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#" tabindex="-1">
@@ -182,37 +184,40 @@
             <p class="hotel-card-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link button" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button" href="#">10</a>
-          </li>
-        </ul>
+        <div class="pagination-container">
+          <ul class="pagination" >
+            <li class="pagination-item">
+              <a class="pagination-link button" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button" href="#">10</a>
+            </li>
+          </ul>
+
         <span class="hotels-page">Гостиниц на странице:</span>
-        <select class="select-control" aria-label="Количество">
+        <select class="select-control-page" aria-label="Количество">
           <option value="4">4</option>
           <option value="8">8</option>
           <option value="16">16</option>
           <option value="32">32</option>
         </select>
+      </div>
       </section>
       <section class="subscription-catalog">
         <h2 class="interested">Подпишитесь на рассылку</h2>
-        <p class="interested-text">
+        <p class="interested-text newsletter-text">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
