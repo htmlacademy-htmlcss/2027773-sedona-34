@@ -337,6 +337,7 @@ body {
   padding: 0;
   column-gap: 18px;
   list-style-type: none;
+  margin-bottom: 66px;
 }
 
 .control-input {
