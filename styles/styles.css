@@ -320,19 +320,24 @@ body {
 }
 
 .hotel-card {
-
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
   padding: 20px;
   width: 300px;
 }
-
+.hotel-card-link {
+  grid-column: 1/-1;
+}
 .hotel-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,340px);
   margin: 0 auto;
-  padding-left: 73px;
-  padding-right: 71px;
+  padding: 0;
+  column-gap: 18px;
   list-style-type: none;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 66px;
 }
 
 .control-input {
@@ -423,6 +428,7 @@ body {
 }
 
 .hotel-card-title-link {
+  grid-column: 1/-1;
   text-decoration-line: none;
 }
 
