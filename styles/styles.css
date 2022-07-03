@@ -66,7 +66,7 @@ body {
   width: 20px;
   height: 20px;
   left: 24px;
-  top: 1px;
+  top: 2px;
   text-align: center;
   padding-top: 3px;
 
@@ -79,6 +79,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
+  color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -101,7 +102,8 @@ body {
 }
 
 .image-welcome {
-  background-color: #b48888;
+  background-color: rgba(3, 130, 214, 0.247);
+  ;
   color: #000000;
   background-image: url("../images/index-background.jpg");
   background-size: cover;
@@ -169,6 +171,7 @@ body {
 
 .navigation-item {
   position: relative;
+  width: 42px;
   margin: 0;
   padding: 0;
 
@@ -269,7 +272,6 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #dbdbdb;
 }
 
 
@@ -527,7 +529,7 @@ body {
   display: flex;
   margin: 0 auto;
   width: 1200px;
-  background-color: #273511;
+  background-color: #3f5b80;
   color: #ffffff;
   background-image: url("../images/background-filter.jpg");
   background-size: cover;
@@ -550,22 +552,16 @@ body {
   margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
+  align-items: center;
 }
 
-.breadcrumbs-item-home {
-  background-image: url("../images/home-inner.svg");
 
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  margin-top: 3px;
-}
 
-.breadcrumbs-item-home::before {
+.breadcrumbs::before {
   background-image: url("../images/arrow.svg");
   position: absolute;
   background-repeat: no-repeat;
-  right: 10px;
+  top: 6px;
   left: 22px;
   height: 8px;
   width: 6px;
@@ -574,7 +570,24 @@ body {
 }
 
 .breadcrumbs-item {
+  padding: 0;
+  margin: 0;
   margin-left: 25px;
+}
+
+.breadcrumbs-item-home {
+  padding: 0;
+  margin: 0;
+
+}
+
+.breadcrumbs-link-home {
+  display: block;
+  background-image: url("../images/home-inner.svg");
+  width: 12px;
+  height: 14px;
+  background-repeat: no-repeat;
+
 }
 
 .breadcrumbs-link {
@@ -583,7 +596,11 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
-  width: 12px;
+  width: 73px;
+  height: 21px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .infrastructure-filter {
@@ -612,6 +629,7 @@ body {
 .type-housing {
   list-style-type: none;
 }
+
 .filter-button {
   display: flex;
   flex-direction: column;
@@ -619,6 +637,7 @@ body {
   margin-left: auto;
   margin-top: auto;
 }
+
 .hotel-card {
   display: grid;
   grid-template-columns: 140px 140px;
@@ -644,40 +663,27 @@ body {
 }
 
 .stars {
-
   background-image: url("../images/spice.svg");
   font-size: 18px;
   background-size: 18px;
   background-repeat: space;
   padding: 0;
-
-
-
-}
-
-.stars-4 {
   box-sizing: border-box;
-  width: 89px;
-  padding: 0;
   margin: 0;
   height: 30px;
   margin-top: 10px;
 }
 
+.stars-4 {
+  width: 89px;
+}
+
 .stars-3 {
-  box-sizing: border-box;
   width: 66px;
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
 }
 
 .stars-2 {
-  box-sizing: border-box;
   width: 42px;
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
 }
 
 .control-input {
@@ -747,15 +753,33 @@ body {
   margin-right: 78px;
   margin-left: 191px;
   padding: 0;
+  padding-left: 20px;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-image: url("../images/arrow-sorting.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 
 }
-
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
 .sorting .button {
   width: 48px;
   height: 48px;
@@ -982,23 +1006,24 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  min-width: 142px;
+  min-width: 152px;
   min-height: 40px;
   list-style-type: none;
   color: #000000;
   background-color: #ffffff;
+  align-items: center;
 }
 
 .footer-social-item {
-  width: 50px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
 }
 
 .social-icon {
   fill: #83B3D3;
   padding: 14px;
+  margin: 0;
 }
 
 .social-icon:hover {
