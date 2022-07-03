@@ -939,6 +939,10 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  background-image: url("../images/arrow-sorting.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 }
 
 .field {
