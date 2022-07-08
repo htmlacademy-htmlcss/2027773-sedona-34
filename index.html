@@ -225,32 +225,73 @@
     </footer>
 
   </div>
-  <div class="modal-container">
+  <div class="modal-container modal-container-close ">
     <div class="modal modal-auth">
-
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <form class="auth-form">
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
-            <label class="data-modal">Дата Заезда:</label>
-            <input class="auth-form-field" type="date">
+            <label class="data-modal" for="date-arrival">Дата Заезда:</label>
+            <input class="auth-form-field arrival-date" type="text" value="27 апреля 2020" id="date-arrival">
+            <span class="result-data">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="field-group">
-            <label class="data-modal">Дата Выезда:</label>
-            <input class="auth-form-field" type="date">
+            <label class="data-modal" for="date-departure">Дата Выезда:</label>
+            <input class="auth-form-field departure-date" type="text" value="1 сентября 2021" id="date-departure">
+            <span class="result-data-out">На эти даты есть свободные номера. Пока есть.</span>
           </p>
-          <p class="field-group">
-            <label class="data-modal">Взрослые:</label>
-            <input  class="auth-form-selector" type="number" value="2">
+          <div class="field-group adults-group ">
+            <p class="quantity">
+              <label class="data-modal adults" for="adults-quantity">Взрослые:</label>
+              <button class="button-minus" type="button"><svg width="13" height="1" viewBox="0 0 13 1" fill=""
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path  d="M0 0v1h13V0H0Z" fill="" />
+                </svg></button>
 
-            <label class="data-modal">Дети:</label>
-            <span class="info-modal"> i </span>
-            <input  class="auth-form-selector" type="number" value="1">
-          </p>
-          <input class="auth-form-button" type="submit" value="Найти">
+              <button class="button-plus" type="button"><svg width="13" height="13" viewBox="0 0 13 13" fill=""
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="" />
+                </svg></button>
+
+
+              <input class="auth-form-selector" type="text" value="2" id="adults-quantity">
+            </p>
+            <p class="quantity">
+              <span class="tooltip-child">
+                <label class="data-modal" for="modal-data">Дети: </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#a)" fill="#fff">
+                        <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M0 0h1v9H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                    вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <button class="button-minus" type="button"><svg width="13" height="1" viewBox="0 0 13 1" fill=""
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path  d="M0 0v1h13V0H0Z" fill="" />
+                </svg></button>
+              <input class="auth-form-selector" type="text" value="1" id="modal-data">
+              <button class="button-plus" type="button"><svg width="13" height="13" viewBox="0 0 13 13" fill=""
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="" />
+                </svg></button>
+            </p>
+          </div>
+          <button class="auth-form-button" type="submit">Найти</button>
         </form>
 
 
