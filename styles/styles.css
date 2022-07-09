@@ -117,7 +117,8 @@ body {
   width: 1200px;
   height: 57px;
   margin: 0 auto;
-  background-position: 0 100;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
 }
 
 .sorting-type {
@@ -350,7 +351,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 230px;
+  width: 172px;
   padding: 0;
   margin: 0;
 }
@@ -367,6 +368,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 182px;
+  margin-bottom: 30px;
 
 }
 
@@ -383,6 +385,10 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+}
+
+.description-advanteges {
+  height: 42px;
 }
 
 .hotel-offer {
@@ -435,10 +441,11 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-bottom: 56px;
   color: #333333;
+  text-align: center;
 }
 
 .search-link {
@@ -481,6 +488,12 @@ body {
   padding-bottom: 94px;
 }
 
+.footer-contacts {
+  padding-top: 5px;
+  padding-right: 7px;
+
+}
+
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -501,6 +514,10 @@ body {
 
 .footer-contacts-phone:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo-academy {
+  padding-top: 8px;
 }
 
 .inner-header {
@@ -723,7 +740,7 @@ body {
   position: relative;
   margin: 0px;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 
 .range-input {
@@ -836,7 +853,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 70px;
+  margin-left: 74px;
   margin-top: auto;
 }
 
@@ -851,6 +868,7 @@ body {
 .hotel-card-link {
   grid-column: 1/-1;
   padding: 0;
+  margin: 0;
 }
 
 .hotel-list {
@@ -859,9 +877,11 @@ body {
   padding: 0;
   column-gap: 18px;
   list-style-type: none;
-  margin-bottom: 66px;
-  margin-right: 72px;
-  margin-left: 72px;
+  margin: 0;
+  margin-bottom: 62px;
+  margin-right: 75px;
+  margin-left: 73px;
+
 }
 
 .stars {
@@ -872,12 +892,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
-  height: 30px;
   margin-top: 10px;
 }
 
 .stars-4 {
-  width: 89px;
+
+  width: 88px;
+
 }
 
 .stars-3 {
@@ -934,16 +955,18 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 8px;
 }
 
 .sorting {
   display: flex;
+
   background-color: #ffffff;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 55px;
   margin-left: 72px;
   margin-right: 71px;
-  margin-bottom: 56px;
+  margin-bottom: 52px;
 }
 
 .select-control {
@@ -962,7 +985,7 @@ body {
   border-radius: 4px;
   background-image: url("../images/arrow-sorting.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   appearance: none;
 }
 
@@ -1019,10 +1042,11 @@ body {
   color: #333333;
   padding: 0;
   width: 140px;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-bottom: 8px;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -1214,12 +1238,13 @@ body {
 
 .footer-social-item {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .social-icon {
   fill: #83B3D3;
-  padding: 14px;
+  padding: 15px;
+  padding-left: 12px;
   margin: 0;
 }
 
@@ -1453,7 +1478,7 @@ body {
   margin: 0;
   padding: 0;
   margin-right: auto;
-  margin-bottom: 63px;
+  margin-bottom: 67px;
 }
 
 .modal-content {
@@ -1515,7 +1540,7 @@ body {
   border-radius: 4px;
   border: none;
   margin-left: auto;
-  padding-left: 19px;
+  padding-left: 20px;
 }
 
 .field-group {
@@ -1679,8 +1704,8 @@ body {
   border: none;
   width: 25px;
   height: 25px;
-  right: 18px;
-  top: 14px;
+  right: 14px;
+  top: 12px;
   padding: 0;
   margin: 0;
   padding-top: 2px;
@@ -1708,8 +1733,8 @@ body {
   width: 25px;
   height: 25px;
   border: none;
-  top: 14px;
-  right: 90px;
+  top: 10px;
+  right: 95px;
   cursor: pointer;
   padding: 0;
   margin: 0;
