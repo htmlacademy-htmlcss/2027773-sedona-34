@@ -120,7 +120,12 @@ body {
   background-position: 0 100%;
   background-repeat: no-repeat;
 }
-
+.sorting .button {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
 .sorting-type {
   display: flex;
   align-items: center;
@@ -129,15 +134,18 @@ body {
 }
 
 .sorting-type.button:hover {
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .sorting-type.button:focus {
-  border: 2px solid #68a2ca;
+  border-color: #68a2ca;
+}
+.sorting-type.button:focus-visible {
+  border-color: #000000;
 }
 
 .sorting-type.button:active {
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .sorting-type.button:not(:nth-child(3)) {
@@ -584,7 +592,9 @@ body {
   height: 14px;
   background-repeat: no-repeat;
 }
-
+.breadcrumbs-link-home:focus-visible {
+  outline: none;
+}
 .breadcrumbs-link {
   display: block;
   font-size: 16px;
@@ -770,7 +780,7 @@ body {
 }
 
 .range-input:hover {
-  opacity: 0.6;
+border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .range-input:focus {
@@ -1011,12 +1021,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting .button {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-}
+
 
 .hotel-card-title {
   font-size: 24px;
@@ -1105,6 +1110,9 @@ body {
   color: #000000;
   background: #F2F2F2;
   border: none;
+}
+.pagination-item:nth-child(1) .pagination-link:focus-visible {
+  outline: none;
 }
 
 .pagination-link {
@@ -1727,11 +1735,15 @@ body {
 }
 
 .button-plus:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
   fill: #000000;
 }
-
+.button-plus:focus-visible {
+  outline: 3px solid #000000;
+  border-radius: 4px;
+  fill: #000000;
+}
 .button-plus:active {
   fill: rgba(0, 0, 0, 0.2);
 }
@@ -1742,13 +1754,13 @@ body {
   width: 25px;
   height: 25px;
   border: none;
-  top: 10px;
   right: 95px;
   cursor: pointer;
   padding: 0;
   margin: 0;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
   fill: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .button-minus:hover {
@@ -1756,11 +1768,15 @@ body {
 }
 
 .button-minus:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
   fill: #000000;
 }
-
+.button-minus:focus-visible {
+  outline: 3px solid #000000;
+  border-radius: 4px;
+  fill: #000000;
+}
 .button-minus:active {
   fill: rgba(0, 0, 0, 0.2);
 }
