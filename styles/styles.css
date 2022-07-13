@@ -20,7 +20,6 @@ html {
 
 body {
   margin: 0;
-
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -34,8 +33,8 @@ body {
   flex-direction: column;
   margin: 0 auto;
   width: 1200px;
-  background-color: #F2F2F2;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -50,26 +49,27 @@ body {
 .page-header-logo {
   position: absolute;
   margin-bottom: -5px;
-  z-index: 1;
+}
 
+.navigation-logo:focus-within .page-header-logo {
+  outline: 2px solid #000000;
 }
 
 .number-favorites {
   position: absolute;
-  background-color: #7DB54F;
+  background-color: #7db54f;
   border-radius: 10px;
   box-sizing: border-box;
-  font-weight: 400;
   font-size: 10px;
   line-height: 13px;
-  color: #FFFFFF;
+  font-weight: 400;
+  color: #ffffff;
   width: 20px;
-  height: 20px;
+  min-height: 20px;
   left: 24px;
   top: 2px;
   text-align: center;
   padding-top: 3px;
-
 }
 
 .nav-link {
@@ -120,7 +120,12 @@ body {
   background-position: 0 100%;
   background-repeat: no-repeat;
 }
-
+.sorting .button {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
 .sorting-type {
   display: flex;
   align-items: center;
@@ -129,15 +134,18 @@ body {
 }
 
 .sorting-type.button:hover {
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .sorting-type.button:focus {
-  border: 2px solid #68A2CA;
+  border-color: #68a2ca;
+}
+.sorting-type.button:focus-visible {
+  border-color: #000000;
 }
 
 .sorting-type.button:active {
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .sorting-type.button:not(:nth-child(3)) {
@@ -190,6 +198,7 @@ body {
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-right: 237px;
   margin-left: 140px;
@@ -201,8 +210,9 @@ body {
 
 .nav-user {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  width: 264px;
+  width: 270px;
   margin: 0;
   padding: 0;
   margin-right: 70px;
@@ -229,7 +239,7 @@ body {
   display: block;
   box-sizing: border-box;
   width: 160px;
-  height: 37px;
+  min-height: 37px;
   border-radius: 4px;
   padding-top: 8px;
   margin: 0;
@@ -379,7 +389,7 @@ body {
 .advantages-description {
   margin: 0 auto;
   padding: 0;
-  height: 63px;
+  min-height: 63px;
   width: 230px;
   font-size: 18px;
   line-height: 21px;
@@ -388,7 +398,7 @@ body {
 }
 
 .description-advanteges {
-  height: 42px;
+  min-height: 42px;
 }
 
 .hotel-offer {
@@ -451,7 +461,7 @@ body {
 .search-link {
   background-color: #756157;
   width: 574px;
-  height: 48px;
+  min-height: 48px;
   border-radius: 4px;
   font-size: 20px;
   line-height: 36px;
@@ -566,12 +576,13 @@ body {
 .breadcrumbs-item {
   padding: 0;
   margin: 0;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .breadcrumbs-item-home {
   padding: 0;
   margin: 0;
+  padding-right: 10px;
 }
 
 .breadcrumbs-link-home {
@@ -581,7 +592,9 @@ body {
   height: 14px;
   background-repeat: no-repeat;
 }
-
+.breadcrumbs-link-home:focus-visible {
+  outline: none;
+}
 .breadcrumbs-link {
   display: block;
   font-size: 16px;
@@ -589,7 +602,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   width: 73px;
-  height: 21px;
+  min-height: 21px;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -597,6 +610,7 @@ body {
 
 .infrastructure-filter {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
 }
@@ -676,14 +690,15 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus .control-mark {
+.control:focus-within .control-mark {
   background: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .control:active .control-mark {
   background: rgba(255, 255, 255, 0.3);
 }
+
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
   position: absolute;
@@ -720,8 +735,9 @@ body {
   background-color: #FFFFFF;
 }
 
-.control:focus .control-mark-radio {
-  border: 3px solid #83B3D3;
+.control:focus-within .control-mark-radio {
+  outline: 3px solid #83B3D3;
+  border-radius: 50%;
 }
 
 .control-input[type="radio"]:checked+.control-mark-radio::before {
@@ -764,7 +780,7 @@ body {
 }
 
 .range-input:hover {
-  opacity: 0.6;
+border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .range-input:focus {
@@ -896,7 +912,6 @@ body {
 }
 
 .stars-4 {
-
   width: 88px;
 
 }
@@ -935,7 +950,7 @@ body {
 }
 
 .button-throw-off:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
@@ -960,7 +975,7 @@ body {
 
 .sorting {
   display: flex;
-
+  flex-wrap: wrap;
   background-color: #ffffff;
   padding: 0;
   padding-top: 55px;
@@ -1006,12 +1021,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting .button {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-}
+
 
 .hotel-card-title {
   font-size: 24px;
@@ -1066,6 +1076,7 @@ body {
 
 .pagination-container {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin-left: 72px;
   margin-right: 72px;
@@ -1086,6 +1097,7 @@ body {
 
 .pagination {
   display: flex;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1099,14 +1111,17 @@ body {
   background: #F2F2F2;
   border: none;
 }
+.pagination-item:nth-child(1) .pagination-link:focus-visible {
+  outline: none;
+}
 
 .pagination-link {
   padding-top: 12px;
   margin-right: 8px;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   border: 1px solid #82B3D3;
   background: #82B3D3;
   color: #ffffff;
@@ -1140,16 +1155,14 @@ body {
   color: #333333;
   width: 175px;
   padding: 0;
-  margin-left: 262px;
+  margin-left: auto;
   margin-right: 51px;
   margin-top: 20px;
   margin-bottom: 17px;
 }
 
 .select-control-page {
-  display: flex;
   box-sizing: border-box;
-  margin-right: auto;
   margin-top: 6px;
   margin-bottom: 6px;
   padding: 10px 20px;
@@ -1226,6 +1239,7 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   min-width: 152px;
@@ -1269,7 +1283,7 @@ body {
   background: #82B3D3;
   border-radius: 4px;
   width: 160px;
-  height: 48px;
+  min-height: 48px;
 }
 
 .button-apply:hover {
@@ -1347,7 +1361,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   background: #82B3D3;
-  height: 60px;
+  min-height: 60px;
   width: 200px;
   border-radius: 0px 10px 10px 0px;
 }
@@ -1373,6 +1387,7 @@ body {
 
 .page-footer {
   display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
   margin: 0 auto;
   width: 1060px;
@@ -1428,7 +1443,7 @@ body {
 
 .modal {
   margin: auto;
-  margin-top: 396px;
+  margin-top: 100px;
   background-color: #ffffff;
 
 }
@@ -1446,7 +1461,7 @@ body {
   width: 53px;
   height: 53px;
   right: 0;
-  top: -16px;
+  top: -10px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 50%;
@@ -1473,12 +1488,13 @@ body {
 .modal-title {
   font-family: PT Sans;
   font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
   margin-right: auto;
-  margin-bottom: 67px;
+  margin-bottom: 58px;
 }
 
 .modal-content {
@@ -1507,12 +1523,12 @@ body {
 
 .auth-form-field:focus {
   background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .auth-form-field:active {
   background-color: #FFFFFF;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 
@@ -1563,6 +1579,7 @@ body {
   padding: 12px 26px;
   margin-top: 40px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .auth-form-button:hover {
@@ -1571,7 +1588,7 @@ body {
 
 .auth-form-button:focus {
   background-color: #68A2CA;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
 }
 
 .auth-form-button:active {
@@ -1670,7 +1687,7 @@ body {
 
 .result-data {
   width: 420px;
-  height: 29px;
+  min-height: 29px;
   margin-left: auto;
   padding-top: 11px;
   font-size: 16px;
@@ -1681,7 +1698,7 @@ body {
 
 .result-data-out {
   width: 420px;
-  height: 29px;
+  min-height: 29px;
   margin-left: auto;
   padding-top: 11px;
   font-size: 16px;
@@ -1718,11 +1735,15 @@ body {
 }
 
 .button-plus:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
   fill: #000000;
 }
-
+.button-plus:focus-visible {
+  outline: 3px solid #000000;
+  border-radius: 4px;
+  fill: #000000;
+}
 .button-plus:active {
   fill: rgba(0, 0, 0, 0.2);
 }
@@ -1733,13 +1754,13 @@ body {
   width: 25px;
   height: 25px;
   border: none;
-  top: 10px;
   right: 95px;
   cursor: pointer;
   padding: 0;
   margin: 0;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
   fill: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .button-minus:hover {
@@ -1747,15 +1768,15 @@ body {
 }
 
 .button-minus:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
   fill: #000000;
 }
-
+.button-minus:focus-visible {
+  outline: 3px solid #000000;
+  border-radius: 4px;
+  fill: #000000;
+}
 .button-minus:active {
   fill: rgba(0, 0, 0, 0.2);
-}
-
-.modal-container-close {
-  display: none;
 }
