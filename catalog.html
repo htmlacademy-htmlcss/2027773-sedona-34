@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -13,7 +14,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип Седоны" src="images/logo.svg" width="139" height="70">
+          <img class="page-header-logo" alt="Логотип Седоны." src="images/logo.svg" width="139" height="70">
         </a>
         <ul class="nav-list">
           <li class="nav-item">
@@ -131,11 +132,11 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
               <div class="range-wrapper-inputs">
-                <input class="range-input" type="number" value="0" name="min-price" id="frome-input">
+                <input class="range-input" type="text" value="0" name="min-price" id="frome-input">
                 <label class="catalog-filter-label frome-label" for="frome-input">
                   от
                 </label>
-                <input class="range-input before-input" type="number" value="9000" name="max-price" id="before-input">
+                <input class="range-input before-input" type="text" value="9000" name="max-price" id="before-input">
                 <label class="catalog-filter-label before-label" for="before-input">
                   до
 
@@ -283,6 +284,7 @@
             </li>
             <li class="pagination-item">
               <a class="pagination-link button" href="#">...</a>
+              <span class="visually-hidden">Показать следующие четыре страницы.</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link button" href="#">10</a>
