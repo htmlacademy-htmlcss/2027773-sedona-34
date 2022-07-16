@@ -120,12 +120,14 @@ body {
   background-position: 0 100%;
   background-repeat: no-repeat;
 }
+
 .sorting .button {
   width: 48px;
   height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
+
 .sorting-type {
   display: flex;
   align-items: center;
@@ -140,6 +142,7 @@ body {
 .sorting-type.button:focus {
   border-color: #68a2ca;
 }
+
 .sorting-type.button:focus-visible {
   border-color: #000000;
 }
@@ -307,6 +310,8 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgba(131, 179, 211, 0.12);
   align-items: center;
   justify-content: center;
@@ -354,6 +359,7 @@ body {
 .advantages-town {
   width: 100%;
   min-height: 384px;
+  padding-bottom: 20px
 }
 
 .advantages-title {
@@ -492,6 +498,7 @@ body {
 
 .subscription-index {
   background-image: url("../images/background.jpg");
+  background-color: rgb(1, 76, 126);
   color: #ffffff;
   background-size: cover;
   padding-top: 94px;
@@ -592,9 +599,7 @@ body {
   height: 14px;
   background-repeat: no-repeat;
 }
-.breadcrumbs-link-home:focus-visible {
-  outline: none;
-}
+
 .breadcrumbs-link {
   display: block;
   font-size: 16px;
@@ -606,6 +611,10 @@ body {
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: none;
 }
 
 .infrastructure-filter {
@@ -768,7 +777,8 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  border: 2px solid #FFFFFF;
+  border: none;
+  outline: 2px solid #FFFFFF;
   border-radius: 4px 0px 0px 4px;
   box-sizing: border-box;
 }
@@ -780,7 +790,7 @@ body {
 }
 
 .range-input:hover {
-border: 2px solid rgba(255, 255, 255, 0.3);
+  outline: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .range-input:focus {
@@ -813,7 +823,7 @@ border: 2px solid rgba(255, 255, 255, 0.3);
 
 .before-input {
   border-radius: 0px 4px 4px 0px;
-  border-left: none;
+  margin-left: 2px;
 }
 
 .range-scale {
@@ -1029,6 +1039,7 @@ border: 2px solid rgba(255, 255, 255, 0.3);
   font-weight: 700;
   text-decoration-line: none;
   color: #000000;
+  word-break: break-all;
   padding: 0;
   margin: 0;
 }
@@ -1111,6 +1122,7 @@ border: 2px solid rgba(255, 255, 255, 0.3);
   background: #F2F2F2;
   border: none;
 }
+
 .pagination-item:nth-child(1) .pagination-link:focus-visible {
   outline: none;
 }
@@ -1355,6 +1367,18 @@ border: 2px solid rgba(255, 255, 255, 0.3);
   background: #7DB54F;
 }
 
+.villass-button:hover,
+.villass-button:focus {
+  background-color: #6C9E42;
+}
+
+.villass-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.villass-button:disabled {
+  background-color: #E5E5E5;
+}
 
 .newsletter-button {
   font-size: 20px;
@@ -1544,9 +1568,7 @@ border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .auth-form-field {
-  background-image: url("../images/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: right 19px center;
+  position: relative;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -1557,6 +1579,19 @@ border: 2px solid rgba(255, 255, 255, 0.3);
   border: none;
   margin-left: auto;
   padding-left: 20px;
+}
+
+.calendar-modal {
+  position: absolute;
+  right: 16px;
+  top: 110px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.calendar-out {
+  top: 205px;
 }
 
 .field-group {
@@ -1739,11 +1774,13 @@ border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   fill: #000000;
 }
+
 .button-plus:focus-visible {
   outline: 3px solid #000000;
   border-radius: 4px;
   fill: #000000;
 }
+
 .button-plus:active {
   fill: rgba(0, 0, 0, 0.2);
 }
@@ -1772,11 +1809,13 @@ border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   fill: #000000;
 }
+
 .button-minus:focus-visible {
   outline: 3px solid #000000;
   border-radius: 4px;
   fill: #000000;
 }
+
 .button-minus:active {
   fill: rgba(0, 0, 0, 0.2);
 }

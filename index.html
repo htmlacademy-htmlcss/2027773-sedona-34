@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -14,7 +15,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="catalog.html">
-          <img class="page-header-logo" alt="Логотип Седоны" src="images/logo.svg" width="139" height="70">
+          <img class="page-header-logo" alt="Логотип Седоны." src="images/logo.svg" width="139" height="70">
         </a>
         <ul class="nav-list">
           <li class="nav-item">
@@ -62,7 +63,8 @@
 
       <section class="image-welcome">
         <h1 class="visually-hidden">Добро пожаловать в каньон Седона</h1>
-        <img class="logo-main" src="images/welcome.svg" alt="Добро пожаловать в каньон Седона" width="458" height="347">
+        <img class="logo-main" src="images/welcome.svg" alt="Добро пожаловать в каньон Седона." width="458"
+          height="347">
         <div class="image-welcome-bottom"></div>
       </section>
       <section class="advantages">
@@ -79,7 +81,7 @@
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
-            <img class="advantages-image" src="images/photo-city.jpg" alt="городок Седона" width="800" height="384">
+            <img class="advantages-image" src="images/photo-city.jpg" alt="городок Седона." width="800" height="384">
             <ul class="town-list">
               <li class="advantages-town">
                 <h3 class="advantages-title-town">Жильё</h3>
@@ -236,12 +238,38 @@
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
             <label class="data-modal" for="date-arrival">Дата Заезда:</label>
-            <input class="auth-form-field arrival-date" type="text" value="27 апреля 2020" id="date-arrival">
+            <input class="auth-form-field arrival-date" type="text" name="form-arrival" required value="27 апреля 2020"
+              id="date-arrival">
+            <button class="calendar-modal" type="button">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".3" fill="#000">
+                  <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                  <path
+                    d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                  <path
+                    d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5Zm2 0c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5Zm-4 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm-2-1c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm4 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2-1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                </g>
+              </svg>
+              <span class="visually-hidden">Выбрать дату заезда.</span>
+            </button>
             <span class="result-data">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="field-group">
             <label class="data-modal" for="date-departure">Дата Выезда:</label>
-            <input class="auth-form-field departure-date" type="text" value="1 сентября 2021" id="date-departure">
+            <input class="auth-form-field departure-date" type="text" name="form-departure" required
+              value="1 сентября 2021" id="date-departure">
+            <button class="calendar-modal calendar-out" type="button">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".3" fill="#000">
+                  <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
+                  <path
+                    d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
+                  <path
+                    d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5Zm2 0c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5Zm-4 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm-2-1c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm4 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2-1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                </g>
+              </svg>
+              <span class="visually-hidden">Выбрать дату выезда.</span>
+            </button>
             <span class="result-data-out">На эти даты есть свободные номера. Пока есть.</span>
           </p>
           <div class="field-group adults-group ">
@@ -250,15 +278,16 @@
               <button class="button-minus" type="button"><svg width="13" height="1" viewBox="0 0 13 1" fill=""
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0v1h13V0H0Z" fill="" />
-                </svg></button>
-
+                </svg>
+                <span class="visually-hidden">Уменьшить колличество.</span>
+              </button>
               <button class="button-plus" type="button"><svg width="13" height="13" viewBox="0 0 13 13" fill=""
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="" />
-                </svg></button>
-
-
-              <input class="auth-form-selector" type="text" value="2" id="adults-quantity">
+                </svg>
+                <span class="visually-hidden">Увеличить колличество.</span>
+              </button>
+              <input class="auth-form-selector" type="text" name="form-adults" value="2" id="adults-quantity">
             </p>
             <p class="quantity">
               <span class="tooltip-child">
@@ -284,18 +313,20 @@
               <button class="button-minus" type="button"><svg width="13" height="1" viewBox="0 0 13 1" fill=""
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0v1h13V0H0Z" fill="" />
-                </svg></button>
-              <input class="auth-form-selector" type="text" value="1" id="modal-data">
+                </svg>
+                <span class="visually-hidden">Уменьшить колличество.</span>
+              </button>
+              <input class="auth-form-selector" type="text" name="form-kids" value="1" id="modal-data">
               <button class="button-plus" type="button"><svg width="13" height="13" viewBox="0 0 13 13" fill=""
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="" />
-                </svg></button>
+                </svg>
+                <span class="visually-hidden">Увеличить колличество.</span>
+              </button>
             </p>
           </div>
           <button class="auth-form-button" type="submit">Найти</button>
         </form>
-
-
       </section>
     </div>
   </div>
