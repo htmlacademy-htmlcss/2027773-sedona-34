@@ -172,8 +172,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 .navigation-item {
   position: relative;
   width: 42px;
@@ -234,7 +232,6 @@ body {
   padding: 0;
   margin: 0;
   margin-left: 20px;
-
 }
 
 .navigation-link {
@@ -274,14 +271,9 @@ body {
   margin: auto;
 }
 
-
-
 .main-index {
   text-align: center;
 }
-
-
-
 
 .advantages {
   color: #000000;
@@ -302,7 +294,6 @@ body {
   flex-wrap: wrap;
   min-height: 384px;
 }
-
 
 .advantages-box {
   display: flex;
@@ -358,7 +349,7 @@ body {
 
 .advantages-town {
   width: 100%;
-  min-height: 384px;
+  min-height: 364px;
   padding-bottom: 20px
 }
 
@@ -385,7 +376,6 @@ body {
   text-transform: uppercase;
   margin-top: 182px;
   margin-bottom: 30px;
-
 }
 
 .advantages-image {
@@ -494,8 +484,6 @@ body {
   background-color: #E5E5E5;
 }
 
-
-
 .subscription-index {
   background-image: url("../images/background.jpg");
   background-color: rgb(1, 76, 126);
@@ -508,7 +496,6 @@ body {
 .footer-contacts {
   padding-top: 5px;
   padding-right: 7px;
-
 }
 
 .footer-contacts-phone {
@@ -565,8 +552,6 @@ body {
   list-style-type: none;
   align-items: center;
 }
-
-
 
 .breadcrumbs::before {
   background-image: url("../images/arrow.svg");
@@ -707,7 +692,6 @@ body {
 .control:active .control-mark {
   background: rgba(255, 255, 255, 0.3);
 }
-
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
   position: absolute;
@@ -886,6 +870,7 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: min-content 1fr;
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
@@ -907,7 +892,6 @@ body {
   margin-bottom: 62px;
   margin-right: 75px;
   margin-left: 73px;
-
 }
 
 .stars {
@@ -919,11 +903,11 @@ body {
   box-sizing: border-box;
   margin: 0;
   margin-top: 10px;
+  height: 30px;
 }
 
 .stars-4 {
   width: 88px;
-
 }
 
 .stars-3 {
@@ -941,7 +925,6 @@ body {
 }
 
 .button-throw-off {
-
   background: transparent;
   padding: 0;
   margin: 0;
@@ -991,7 +974,7 @@ body {
   padding-top: 55px;
   margin-left: 72px;
   margin-right: 71px;
-  margin-bottom: 52px;
+  margin-bottom: 57px;
 }
 
 .select-control {
@@ -1053,7 +1036,6 @@ body {
   margin: 0;
 }
 
-
 .hotel-card-rating {
   border-radius: 4px;
   background-color: #F2F2F2;
@@ -1068,9 +1050,8 @@ body {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  height: fit-content;
 }
-
-
 
 .subscription-catalog {
   padding-top: 94px;
@@ -1108,7 +1089,6 @@ body {
 
 .pagination {
   display: flex;
-
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1205,7 +1185,6 @@ body {
 .search-hotel {
   margin: 0 auto;
   padding-bottom: 93px;
-
 }
 
 .newsletter-form {
@@ -1213,7 +1192,6 @@ body {
   grid-template-columns: 600px 200px;
   box-sizing: border-box;
   margin: 0px 200px 0px 200px;
-
 }
 
 .newsletter-title {
@@ -1224,7 +1202,6 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 29px;
-
 }
 
 .newsletter-text {
@@ -1317,6 +1294,8 @@ body {
 
 .hotel-card-buttom-detailed {
   background: #756157;
+  height: fit-content;
+  word-break: break-all;
   border-radius: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1344,6 +1323,8 @@ body {
   border-radius: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
+  height: fit-content;
+  word-break: break-all;
 }
 
 .hotel-card-buttom-favorites:hover {
@@ -1469,7 +1450,6 @@ body {
   margin: auto;
   margin-top: 100px;
   background-color: #ffffff;
-
 }
 
 .modal-auth {
@@ -1510,7 +1490,6 @@ body {
 }
 
 .modal-title {
-  font-family: PT Sans;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1518,7 +1497,7 @@ body {
   margin: 0;
   padding: 0;
   margin-right: auto;
-  margin-bottom: 58px;
+  margin-bottom: 62px;
 }
 
 .modal-content {
@@ -1534,7 +1513,6 @@ body {
   line-height: 26px;
   margin: 0;
   padding: 0;
-
 }
 
 .adults {
@@ -1554,8 +1532,6 @@ body {
   background-color: #FFFFFF;
   outline: 2px solid #000000;
 }
-
-
 
 .tooltip-child>.data-modal {
   width: 54px;
@@ -1583,8 +1559,8 @@ body {
 
 .calendar-modal {
   position: absolute;
-  right: 16px;
-  top: 110px;
+  right: 13px;
+  top: 115px;
   border: none;
   cursor: pointer;
   background: transparent;
@@ -1724,7 +1700,7 @@ body {
   width: 420px;
   min-height: 29px;
   margin-left: auto;
-  padding-top: 11px;
+  padding-top: 6px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
